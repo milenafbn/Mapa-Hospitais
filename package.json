@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "node": "^21.6.0"
+  }
+}
