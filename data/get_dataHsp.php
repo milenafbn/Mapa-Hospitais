@@ -19,7 +19,7 @@ $idReg = "";
 $cl = ($idReg == "") ? "" : "AND mun_codreg = '".$idReg."' ";
 
 // Consulta SQL para obter dados dos hospitais
-$consultaHospitais = "SELECT HOSPITAIS, CNES, MUNICIPIOS, ENDERECO, COORDENADAS, mun_codreg  as 'COD_REG'
+$consultaHospitais = "SELECT HOSPITAIS, CNES, MUNICIPIOS, ENDERECO, COORDENADAS, CODMUN6, mun_codreg  as 'COD_REG'
                      FROM tb_hsp h, tb_municipios m
                      WHERE h.CODMUN6 = m.mun_ibge6 ".$cl."";
 $resultadoHospitais = $conn->query($consultaHospitais);
